@@ -1,0 +1,188 @@
+html, body, .grid-container {
+  height: 100%; 
+  margin: 0;
+  scroll-behavior: smooth; 
+  width: 100%;
+    
+  padding: 0px;
+  
+  }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2.4fr 0.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+nav{ 
+  grid-area: nav; 
+  background-color: #e9d6d0;
+  text-align: center;
+  list-style:none; 
+  height:130px;
+}
+
+nav a{
+  text-decoration: none;
+  color:#001427;
+  display:inline-block;
+  font-family:roboto;
+  font-size: 40px;
+  padding: 40px;
+  float: right;
+  
+  position: relative;
+  left: 210px;
+}
+
+a.donate{
+  color: #EFF9F0;
+  background-color: #EF476F;
+  padding: 15px;
+  display:inline-block;
+  position:relative;
+  top: 20px;
+  left: 250px;
+}
+
+nav a.donate:hover{
+  color: #fbac46;
+
+}
+nav a:hover{
+  color: #EF476F;
+
+}
+
+
+ #logo{ 
+	position:relative; 
+	top: -45px;
+	left:-1400px; 
+  max-width:260px;
+  max-height:260px;
+  margin: 0px auto;
+  
+} 
+
+div.joinBackground{
+  
+  margin-top:50px;
+  width:1200px;
+  height:600px;
+  position: absolute;
+  left: 150px;
+  background:#f5f2c4;  
+  
+}
+#protestors{
+  width: 1100px;
+  height: 500px;
+  position: relative;
+  right: -10px;
+}
+div.joinContainer{
+  
+  margin-top:50px;
+  width:650px;
+  height:700px;
+  position: relative;
+  left:410px;
+  background: #eff9f0;  
+
+  
+  
+   
+}
+h1 {
+  text-align: center;
+
+}
+ input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main {
+  
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: main;
+
+  background: url(sketches/border.png);
+        background-size: cover;
+        background-position:-200px -10px;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        
+  
+}
+
+
+
+footer { grid-area: footer; }
+
+@media screen and (max-width: 460px){
+  .grid-container{
+    display: block;
+  }
+   
+  main{
+    width: 100%;
+    height: 200px;
+    background: url(sketches/border.png);
+        background-size: 100%;       
+        background-attachment: absolute;
+        background-repeat: no-repeat;
+
+    
+  }
+  nav{
+    height:90px;
+
+
+  }
+
+  #logo{ 
+	position:fixed; 
+	top:0; 
+	left:0; 
+  max-width:100px;
+  max-height:100px;
+}   
+}
+
+
+
+/* For presentation only, no need to copy the code below 
+/* .grid-container * {
+  border: 1px solid red;
+  position: relative;
+}*/

@@ -1,0 +1,322 @@
+html, body, .grid-container {
+  height: 100%; 
+  margin: 0;
+  scroll-behavior: smooth; 
+  width: 100%;
+    
+  padding: 0px;
+  
+  }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2.4fr 0.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+nav{ 
+  grid-area: nav; 
+  background-color: #e9d6d0;
+  text-align: center;
+  list-style:none; 
+  height:130px;
+}
+
+nav a{
+  text-decoration: none;
+  color:#1B4332;
+  display:inline-block;
+  font-family:roboto;
+  font-size: 40px;
+  padding: 40px;
+  float: right;
+  
+  position: relative;
+  left: 210px;
+}
+
+a.donate{
+  color: #EFF9F0;
+  background-color: #EF476F;
+  padding: 15px;
+  display:inline-block;
+  position:relative;
+  top: 20px;
+  left: 250px;
+}
+
+nav a.donate:hover{
+  color: #fbac46;
+
+}
+nav a:hover{
+  color: #EF476F;
+
+}
+
+
+ #logo{ 
+	position:relative; 
+	top: -45px;
+	left:-1400px; 
+  max-width:260px;
+  max-height:260px;
+  margin: 0px auto;
+  
+} 
+
+div.joinBackground{
+  
+  margin-top:50px;
+  width:1200px;
+  height:600px;
+  position: absolute;
+  left: 150px;
+  background:#f5f2c4;  
+  
+}
+#protestors{
+  width: 1100px;
+  height: 500px;
+  position: relative;
+  right: -10px;
+}
+div.joinContainer{
+  
+  margin-top:50px;
+  width:650px;
+  height:700px;
+  position: relative;
+  left:410px;
+  background: #eff9f0;  
+  
+   
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #1B4332;
+
+}
+ input[type=text], input[type=email], input[type=tel], select {
+  width: 50%;
+  padding: 12px 25px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #EF476F;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;  
+  width: 50%;
+  background-color: #f1942d;
+  color: white;
+  padding: 14px 30px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  position: relative;
+  top: 30px;
+}
+
+div.declaration{
+  margin-top:50px;
+  width:1300px;
+  height:700px;
+  position: relative;
+  right: 550px;
+  
+  top: 500px;
+  background-color: #f1f3e6;
+
+}
+#young_protestors{
+  width:800px;
+  height:500px;
+  position: relative;
+  left: 170px;
+  z-index: 5;
+  border: 30px solid #EF476F;
+}
+div.declarationBackground{
+  margin-top: 100px;
+  width:1000px;
+  height:1000px;
+  position: relative;
+  right: -140px;
+  
+  top: -200px;
+
+  background-color: #EF476F;
+}
+div.declarationBackground h1 {
+  position: relative;
+  color: #1B4332;
+  top: 50px;
+}
+div.declarationTextBackground{
+  position: relative;
+  top: 100px;
+  left: 150px;
+  height: 600px;
+  width: 700px;
+  background-color: #f4f3d5;
+}
+div.declarationTextBackground p{ 
+  
+  position: relative;
+  left: 100px;
+  top: 50px;
+  width: 500px;
+  font-size: 24px;
+
+}
+
+div.declarationTextBackground ol, ul { 
+  position: relative;
+  left: 10px;
+  top: 20px;
+  width: 500px;
+  font-size: 24px;
+
+}
+#pdf_details{
+  font-size: 12px;
+}
+
+figure figcaption {
+	text-align: center;
+  font-size: 10px;
+  
+}
+main {
+  
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: main;
+
+  background: url(sketches/border.png);
+        background-size: cover;
+        background-position:-200px -10px;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        
+  
+}
+
+
+
+footer { grid-area: footer; }
+
+@media screen and (max-width: 460px){
+  .grid-container{
+    display: block;
+  }
+   
+  main{
+    width: 100%;
+    height: 210px;
+    background: url(sketches/border.png);
+        background-size: 100%;       
+        background-attachment: absolute;
+        background-repeat: no-repeat;
+    
+  }
+  nav{
+    height:80px;
+  }
+  #logo{ 
+	position:fixed; 
+	top: 5px;
+	left: 0px;
+  max-width:130px;
+  max-height:160px;
+  margin: 0px auto;}
+
+  nav a:not(:first-child) {
+    display: none;
+  }
+  
+  
+  div.joinBackground{
+    margin-top:25px;
+    width:300px;
+    height:150px;
+    position: absolute;
+    left: 55px;
+    background:#f5f2c4;  
+    
+  }
+  
+  #protestors{
+  width: 300px;
+  height: 150px;
+  position: relative;
+  right: 0px;
+}
+h1 {
+  text-align: center;
+  font-size: 15px;
+
+}
+
+   div.joinContainer{
+    margin-top:25px;
+    width:170px;
+    height:195px;
+    position: relative;
+    left: 125px;
+    background:#eff9f0;  
+  }
+
+  input[type=text], input[type=email], input[type=tel], select {
+    width: 150px;
+    height: 30px;
+    padding: 0px 1px;
+    margin: 2px 0;
+    font-size: 10px;
+  }
+  
+  input[type=submit] {
+  
+  font-size: 12px;
+  font-weight: 300;  
+  width: 90px;
+  text-align: left;
+  padding: 5px 30px;
+  margin: 10px 10px;
+
+  position: relative;
+  top: 0px;
+}
+
+  
+
+  
+}   
+}
+
+
+
+/* For presentation only, no need to copy the code below 
+/* .grid-container * {
+  border: 1px solid red;
+  position: relative;
+}*/

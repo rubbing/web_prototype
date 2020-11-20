@@ -483,6 +483,7 @@ footer {
   bottom:-500px;
   right:0px;
   height: 200px;
+  width: 450px;
   text-align: left;  
 }
 footer p{
@@ -519,7 +520,7 @@ footer p{
   max-height:160px;
   
   position: absolute;
-  left: 300px;
+  left: 250px;
   top: 150px;
 }
   

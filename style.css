@@ -64,7 +64,7 @@ nav a:hover{
  #logo{ 
 	position:relative; 
 	top: -45px;
-	left:-1500px; 
+	left:-1400px; 
   max-width:260px;
   max-height:260px;
   margin: 0px auto;
@@ -302,6 +302,35 @@ footer p{
   left: 1350px;
   top: 200px;
 }
+/*Donation page */
+nav p{
+  display:inline-block;
+  font-family:roboto;
+  font-size: 30px;
+  position: relative;
+  left: 700px;
+  top: 50px;
+
+}
+div.donationBackground{
+    margin-top:50px;
+    width:1300px;
+    height:800px;
+    position: absolute;
+    right: 110px;
+    background:#524686;  
+    
+  }
+ div.donationContainer{
+    margin-top:50px;
+    width:650px;
+    height:700px;
+    position: relative;
+    left: 430px;
+    background:#f1f3e6;  
+  }
+
+
 @media screen and (min-width:600px) {
   div.dropdown, div.dropdown-content{
     display:none;
